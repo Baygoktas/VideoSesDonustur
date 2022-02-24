@@ -53,7 +53,7 @@ def add_task(message: Message):
                     height=height,
                     progress=progress_for_pyrogram,
                     progress_args=(
-                        f"`{os.path.basename(new_file)} Yükleniyor...`",
+                        f"`{os.path.basename(new_file)} Yükleniyor...📤`",
                         msg,
                         c_time
                     ))
