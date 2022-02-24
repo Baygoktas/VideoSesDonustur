@@ -30,7 +30,7 @@ def help_message(app, message):
                 [
                     [
                         InlineKeyboardButton(
-                            "Destek", url="https://t.me/botsohbet"
+                            "Kanal", url="https://t.me/baygoktass"
                         )
                     ]
                 ]
@@ -44,7 +44,7 @@ def encode_video(app, message):
       if not message.document.mime_type in video_mimetype:
         message.reply_text("```Geçersiz Video !\nBu video dosyasına benzemiyor.```", quote=True)
         return
-    message.reply_text(f"`✔️ Sıraya Eklendi...\nSıra: {len(data)}\n\nSabırlı olun...\n\n#kuyruk`", quote=True)
+    message.reply_text(f"`✔️ İşleminiz Sıraya Eklendi...\nSıra: {len(data)}\n\nSabırlı olun...\n\n#İşlem sıranız`", quote=True)
     data.append(message)
     if len(data) == 1:
       add_task(message)
