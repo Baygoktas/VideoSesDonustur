@@ -21,7 +21,7 @@ def add_task(message: Message):
             file_name=download_dir,
             progress=progress_for_pyrogram,
             progress_args=(
-                "`İndiriliyor...`",
+                "`İndiriliyor...📥`",
                 msg,
                 c_time
             ))
@@ -69,7 +69,7 @@ def add_task(message: Message):
             os.remove(thumb)
 
             try:
-                msg.edit("`İşlem Bitti. ✔️`")
+                msg.edit("`İşlem Bitti. @baygoktass`")
             except MessageNotModified:
                 pass
         else:
